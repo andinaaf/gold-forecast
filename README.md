@@ -1,5 +1,4 @@
 # 🥇 Prediksi Harga Emas Menggunakan LSTM
-**Proyek EAS – MK Pembelajaran Mesin**
 
 ---
 
