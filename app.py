@@ -25,12 +25,12 @@ st.markdown("""
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
     html, body, [class*="css"] { font-family: 'Inter', sans-serif; }
-    .main { background-color: #0F1117; }
-    .stApp { background: linear-gradient(135deg, #0F1117 0%, #1A1D2E 100%); }
+    .main { background-color: #FFF0F5; }
+    .stApp { background: linear-gradient(135deg, #FFF0F5 0%, #FFE4EE 100%); }
 
     .metric-card {
-        background: linear-gradient(135deg, #1E2130 0%, #252840 100%);
-        border: 1px solid rgba(255,215,0,0.2);
+        background: linear-gradient(135deg, #FFE4EE 0%, #FFF0F5 100%);
+        border: 1px solid rgba(255,150,180,0.4);
         border-radius: 16px;
         padding: 20px 24px;
         margin: 8px 0;
@@ -61,8 +61,8 @@ st.markdown("""
     }
 
     [data-testid="stSidebar"] {
-        background: linear-gradient(180deg, #141627 0%, #1A1D2E 100%);
-        border-right: 1px solid rgba(255,215,0,0.1);
+    background: linear-gradient(180deg, #FFE4EE 0%, #FFC8DC 100%);
+    border-right: 1px solid rgba(255,150,180,0.3);
     }
 
     .stSlider label, .stSelectbox label, .stNumberInput label {
@@ -90,9 +90,9 @@ BLUE   = '#3B82F6'
 GREEN  = '#10B981'
 RED    = '#EF4444'
 PURPLE = '#8B5CF6'
-BG     = '#1E2130'
-TEXT   = '#E2E8F0'
-MUTED  = '#8B95B2'
+BG   = '#FFF0F5'
+TEXT = '#4A2040'  
+MUTED = '#C08090'  
 
 # Hex → rgba helper (FIX: replaces the broken string manipulation)
 def hex_to_rgba(hex_color, alpha=0.08):
