@@ -1,6 +1,5 @@
 """
 Dashboard Prediksi Harga Emas - LSTM
-Proyek EAS MK Pembelajaran Mesin
 """
 
 import streamlit as st
@@ -202,7 +201,7 @@ with st.sidebar:
     <div style='text-align:center; padding:10px 0 20px 0;'>
         <div style='font-size:40px'>🥇</div>
         <div style='font-size:18px; font-weight:700; color:{GOLD}'>Gold Price Predictor</div>
-        <div style='font-size:11px; color:{MUTED}; margin-top:4px'>LSTM · Proyek EAS</div>
+        <div style='font-size:11px; color:{MUTED}; margin-top:4px'>LSTM</div>
     </div>
     """, unsafe_allow_html=True)
 
@@ -607,7 +606,7 @@ st.markdown(f"""
 <div style='text-align:center; padding:30px 0 10px 0;
             border-top:1px solid rgba(255,215,0,0.1); margin-top:20px;'>
     <span style='color:{MUTED}; font-size:12px;'>
-        🥇 Prediksi Harga Emas · LSTM · Proyek EAS MK Pembelajaran Mesin
+        🥇 Prediksi Harga Emas · LSTM 
     </span>
 </div>
 """, unsafe_allow_html=True)
