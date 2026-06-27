@@ -29,70 +29,70 @@ st.markdown("""
     .stApp { background: linear-gradient(135deg, #FFF0F5 0%, #FFE4EE 100%); }
 
     .metric-card {
-        background: linear-gradient(135deg, #FFE4EE 0%, #FFF0F5 100%);
-        border: 1px solid rgba(255,150,180,0.4);
+        background: linear-gradient(135deg, #FFFFFF 0%, #FFF0F5 100%);
+        border: 1px solid rgba(220,100,140,0.25);
         border-radius: 16px;
         padding: 20px 24px;
         margin: 8px 0;
-        box-shadow: 0 4px 20px rgba(255,215,0,0.08);
+        box-shadow: 0 4px 20px rgba(220,100,140,0.08);
         transition: transform 0.2s, box-shadow 0.2s;
     }
     .metric-card:hover {
         transform: translateY(-2px);
-        box-shadow: 0 8px 30px rgba(255,215,0,0.15);
+        box-shadow: 0 8px 30px rgba(220,100,140,0.18);
     }
     .metric-label {
-        font-size: 11px; font-weight: 600; color: #8B95B2;
+        font-size: 11px; font-weight: 600; color: #B07090;
         letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 6px;
     }
-    .metric-value { font-size: 28px; font-weight: 700; color: #FFD700; line-height: 1; }
-    .metric-delta { font-size: 12px; color: #8B95B2; margin-top: 4px; }
+    .metric-value { font-size: 28px; font-weight: 700; color: #C2185B; line-height: 1; }
+    .metric-delta { font-size: 12px; color: #B07090; margin-top: 4px; }
 
     .section-header {
-        font-size: 18px; font-weight: 700; color: #FFFFFF;
-        padding: 8px 0 4px 0; border-bottom: 2px solid rgba(255,215,0,0.3);
+        font-size: 18px; font-weight: 700; color: #7B2D4E;
+        padding: 8px 0 4px 0; border-bottom: 2px solid rgba(220,100,140,0.35);
         margin-bottom: 16px; letter-spacing: 0.3px;
     }
 
     .info-box {
-        background: rgba(255,215,0,0.05); border-left: 3px solid #FFD700;
+        background: rgba(220,100,140,0.07); border-left: 3px solid #E91E8C;
         border-radius: 0 8px 8px 0; padding: 12px 16px; margin: 10px 0;
-        font-size: 13px; color: #C0C8D8; line-height: 1.6;
+        font-size: 13px; color: #7B2D4E; line-height: 1.6;
     }
 
     [data-testid="stSidebar"] {
-    background: linear-gradient(180deg, #FFE4EE 0%, #FFC8DC 100%);
-    border-right: 1px solid rgba(255,150,180,0.3);
+        background: linear-gradient(180deg, #FFE4EE 0%, #FFCCE0 100%);
+        border-right: 1px solid rgba(220,100,140,0.2);
     }
 
     .stSlider label, .stSelectbox label, .stNumberInput label {
-        color: #C0C8D8 !important; font-size: 13px !important; font-weight: 500 !important;
+        color: #7B2D4E !important; font-size: 13px !important; font-weight: 500 !important;
     }
 
-    h1, h2, h3 { color: #FFFFFF !important; }
-    .stMarkdown p { color: #C0C8D8; }
+    h1, h2, h3 { color: #7B2D4E !important; }
+    .stMarkdown p { color: #6D3050; }
 
     div[data-testid="metric-container"] {
-        background: #1E2130; border: 1px solid rgba(255,215,0,0.15);
+        background: #FFFFFF; border: 1px solid rgba(220,100,140,0.2);
         border-radius: 12px; padding: 16px;
     }
-    div[data-testid="metric-container"] label { color: #8B95B2 !important; }
-    div[data-testid="metric-container"] div[data-testid="stMetricValue"] { color: #FFD700 !important; }
+    div[data-testid="metric-container"] label { color: #B07090 !important; }
+    div[data-testid="metric-container"] div[data-testid="stMetricValue"] { color: #C2185B !important; }
     .stAlert { border-radius: 10px; }
 </style>
 """, unsafe_allow_html=True)
 
 
 # ─── Color Palette ────────────────────────────────────────────────────────────
-GOLD   = '#FFD700'
-GOLD2  = '#FFA500'
-BLUE   = '#3B82F6'
-GREEN  = '#10B981'
-RED    = '#EF4444'
-PURPLE = '#8B5CF6'
-BG   = '#FFF0F5'
-TEXT = '#4A2040'  
-MUTED = '#C08090'  
+GOLD   = '#E91E8C'   # pink magenta (aksen utama)
+GOLD2  = '#F06292'   # pink muda
+BLUE   = '#7C4DFF'   # ungu
+GREEN  = '#26A69A'   # teal
+RED    = '#E91E63'   # pink gelap
+PURPLE = '#AB47BC'   # ungu muda
+BG     = '#FFF0F5'   # soft pink background
+TEXT   = '#4A1942'   # teks gelap keunguan
+MUTED  = '#B07090'   # teks muted pink
 
 # Hex → rgba helper (FIX: replaces the broken string manipulation)
 def hex_to_rgba(hex_color, alpha=0.08):
@@ -606,7 +606,7 @@ st.markdown(f"""
 <div style='text-align:center; padding:30px 0 10px 0;
             border-top:1px solid rgba(255,215,0,0.1); margin-top:20px;'>
     <span style='color:{MUTED}; font-size:12px;'>
-        🥇 Prediksi Harga Emas · LSTM 
+        🥇 Prediksi Harga Emas · LSTM
     </span>
 </div>
 """, unsafe_allow_html=True)
