@@ -174,7 +174,7 @@ def simple_lstm_simulation(df, look_back=12, n_epochs=50):
     from sklearn.metrics import mean_absolute_error, mean_squared_error
 
     feature_cols = ['Harga_Emas', 'Inflasi', 'Kurs_Rupiah', 'BI_Rate', 'Harga_Minyak']
-    data = df[feature_cols].fillna(method='ffill').dropna()
+    data = df[feature_cols].ffill().dropna()
 
     scaler = MinMaxScaler()
     data_scaled = scaler.fit_transform(data)
